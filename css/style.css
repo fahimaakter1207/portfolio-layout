@@ -1,0 +1,650 @@
+/* ==========================================================================
+    Template Name: Damoxs - Sass & App Landing HTML5 Template
+    Template URI: http://portfolio.com
+    Description: Damoxs - Sass & App Landing HTML5 Template
+    Author: Tanjina
+    Author URI: http://www.portfolio.com
+    Version: 1.0
+  ========================================================================== */
+
+/* CSS Index 
+-----------------------------------
+1. Template default css
+2. Header css
+3. Home css
+4. Features css
+5. Developer css
+6. History css
+7. Process css
+8. Action css
+9. Software css
+10. Price css
+11. Testimonial css
+12. News css
+13. Blog page css 
+14. Blog-Side-bar css
+15. Footer css
+*/
+
+/* ==========================================================================
+   Google Font
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600;700&display=swap');
+   /*...................................
+    1. Template default css
+    ................................... */
+   
+html {
+    overflow-x: hidden;
+}
+      
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+   
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+   
+a:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+   
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+h2
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+   
+p{
+    font-family: 'Poppins', sans-serif;
+}
+   
+ul {
+    list-style: outside none none;
+    margin: 0px;
+    padding: 0px;
+ }
+   
+li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+   
+a {
+  color: inherit;
+}
+   
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+   
+.form-control:focus {
+    outline: 0;
+    box-shadow:none;
+    background: transparent;
+    
+}
+
+/*------ 1. default-css ------*/
+
+.section-padding{
+    padding: 100px 0;
+}
+button.btn {
+    padding: 11px 50px;
+    border: 2px solid rgba(255, 255, 255, 0.596);
+    border-radius: 32px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 27px;
+    transition: .3s;
+}
+
+button.btn:hover{
+    color: #fff;
+    background-color: #fd4766;
+    border: 2px solid #fd4766;
+}
+  
+/* ==========================================================================
+    Author's custom styles
+========================================================================== */
+
+/* ========== Header css ============ */
+.header{
+    background: url(../images/bg/bg-image-28.jpg) 
+    fixed no-repeat center/cover ;
+    height: 100vh;
+    width: 100%;;
+}
+.header-top {
+    padding: 20px 0;
+}
+.menu {
+    padding-left: 60px;
+    display: flex;
+}
+
+.logo img {
+    width: 60px;
+    height: 100%;
+}
+
+ul.main-menu {
+    padding-left: 50px;
+    text-align: center;
+}
+
+ul.main-menu li {
+    padding: 14px 2px;
+    margin: 0 8px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+ul.main-menu li.active {
+    color: #fd4766;
+    border-bottom: 2px solid #fd4766;
+}
+.social-button {
+    display: flex;
+    float: right;
+    padding-right: 60px;
+}
+
+ul.social-icon li {
+    padding: 18px 10px;
+    font-size: 16px;
+    color: #fff;
+    transition: .4s;
+}
+.social-icon li:hover{
+    transform: translateY(-5px);
+}
+
+ul.social-icon {
+    margin-right: 60px;
+}
+
+.home-content {
+    padding: 200px 0 50px 0;
+}
+
+.col-lg-6 {
+    padding: 0;
+}
+
+.home-content h6 {
+    color: #b9b3b3;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.home-content h1 {
+    font-size: 73px;
+    color: #fff;
+    line-height: 90px;
+}
+
+.home-content h1 span {
+    color: #fd4766;
+    font-size: 65px;
+}
+.home-content h4 {
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 61px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+/* ========== About css ============ */
+section#about {
+    background: #0E1525;
+    padding-bottom: 0;
+}
+.about-img img {
+    height: 546px;
+    width: 100%;
+    border-radius: 10px;
+}
+.col-lg-5 {
+    padding: 0;
+}
+.all-title span.subtitle {
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: .5; 
+    background: linear-gradient(120deg,#1c99fe 20.69%,#7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    display: inline-block; 
+}
+
+.about-content {
+    margin-left: 50px;
+}
+.all-title h2 {
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 65px;
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.all-title p {
+    font-size: 18px;
+    color: rgba(198, 201, 216, 0.75);
+    font-weight: 300;
+    line-height: 30px;
+}
+.skills {
+    padding: 14px 0px;
+    border: 1px solid #dddddd75;
+    border-radius: 31px;
+    margin-right: 28px;
+    margin-top: 40px;
+}
+  
+.skills ul li {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+}
+.skills li a.active-skills {
+    background: #fd4766;
+    padding: 14px 26px;
+    border-radius: 30px;
+    border: 2px solid #fd4766;
+}
+.skills li a.skills-2{
+    background: transparent;
+    padding: 14px 26px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+}
+.skills li a.skills-2:hover{
+    background: #fd4766;
+
+    border: 2px solid #fd4766;
+}
+
+
+.single-progress h6 {
+    float: left;
+    margin-top: -27px;
+    position: absolute;
+    color: rgba(198, 201, 216, 0.75);
+    font-size: 15px;
+    text-transform: capitalize;
+    line-height: 21px;
+    font-weight: 500;
+}
+ 
+.single-progress span {
+    position: absolute;
+    margin-top: -27px;
+    padding-left: 530px;
+    color: rgba(198, 201, 216, 0.75);
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.bar{
+    margin-top: 65px;
+}
+.progress {
+    height: 4px;
+}
+.single-progress {
+    margin-top: 55px;
+}
+.about-content .progress-bar {
+    background: linear-gradient(45deg, #fd4766, #337dff);
+}
+
+/* ========== Service css ============ */
+
+.services{
+    background: #0E1525;
+}
+.services .all-title{
+    text-align: center;
+}
+.single-service {
+    background: #091020;
+    padding: 42px 23px 42px 28px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.service-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 27px;
+    margin-bottom: 23px;
+}
+
+.service-content p {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(198, 201, 216, 0.75);
+}
+
+.services-item {
+    margin-top: 70px;
+}
+
+/* ========== Project css ============ */
+.project{
+    background: #0E1525;
+}
+
+.project .all-title{
+    text-align: center;
+}
+
+.single-project-1{
+    background: url(../images/project/1.jpg) no-repeat center/cover;
+}
+.single-project-2{
+    background: url(../images/project/2.jpg) no-repeat center/cover;
+}
+.single-project-3{
+    background: url(../images/project/3.jpg) no-repeat center/cover;
+}
+.single-project-4{
+    background: url(../images/project/4.jpg) no-repeat center/cover;
+}
+.single-project-5{
+    background: url(../images/project/5.jpg) no-repeat center/cover;
+}
+.single-project-6{
+    background: url(../images/project/6.jpg) no-repeat center/cover;
+}
+.single-project{
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 21px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: .8s;
+}
+.single-project:hover{
+    transform: scale(1.1);
+}
+.single-project::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.281);
+    
+}
+.single-project:hover .project-content{
+    
+    top: 0;
+    background:linear-gradient(180deg,#1f448300, #fd4765ca );
+}
+
+.project-content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 15%;
+    text-align: center;
+    color: #fff;
+    padding: 0px 27px;
+    padding-top: 343px;
+    transition: .8s;
+}
+.project-content span {
+    font-size: 15px;
+    color: #ffffffc4;
+    line-height: 20px;
+}
+
+.project-content h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.project-btn {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.project-btn .btn {
+    color: #fff;
+    padding: 16px 50px;
+    background-color: #fd4766;
+    border: 2px solid #fd4766;
+}
+.project-btn .btn:hover{
+    border: 2px solid #fd4766;
+    color: #fd4766;
+    background-color: transparent;
+}
+
+/* ========== News css ============ */
+.news{
+    background: #0E1525;
+    padding-top: 40px;
+}
+.news .all-title{
+    text-align: center;
+}
+
+.single-news-1{
+    background: url(../images/blog/1.jpg) no-repeat center/cover;
+}
+.single-news-2{
+    background: url(../images/blog/2.jpg) no-repeat center/cover;
+}
+.single-news-3{
+    background: url(../images/blog/3.jpg) no-repeat center/cover;
+}
+
+.news .project-content h4{
+    font-size: 23px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 8px 0 17px;
+}
+.news .project-content{
+    top: 16%;
+    text-align: left;
+    color: #fff;
+    padding: 0px 27px;
+    padding-top: 303px;
+}
+
+.project-content .read-more{
+    color: #fff;
+    padding: 6px 22px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1.5px solid #fff;
+    text-transform: uppercase;
+}
+
+.project-content .read-more:hover{
+    color: #fff;
+    background-color: #fd4766;
+    border: 1.5px solid #fd4766;
+}
+
+/* ========== Hire Me css ============ */
+
+.hire-me{
+    background: #0E1525;
+    padding-top: 0;
+}
+.address-info {
+    padding: 10px 0 30px 0;
+}
+
+.call-info span {
+    font-size: 14px;
+    color: #757575;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.call-info a.link {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.685);
+    padding-left: 13px;
+}
+.email-info span {
+    font-size: 14px;
+    color: #757575;
+    line-height: 23px;
+    font-weight: 400;
+}
+
+.email-info a.link {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.685);
+    padding-left: 13px;
+}
+
+.call-info {
+    padding-bottom: 13px;
+}
+
+.email-info {
+    padding-bottom: 14px;
+}
+.form-group {
+    border: 2px solid #bfbbbb47;
+    border-radius: 5px;
+}
+input.form-control {
+    background: transparent;
+    height: 45px;
+    width: 100%;
+    border: none;
+}
+
+textarea.form-control{
+    background: transparent;
+    border: 2px solid #bfbbbb47;
+}
+
+textarea {
+    background: transparent;
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.hire-btn {
+    margin-top: 40px;
+}
+.hire-btn .btn{
+    color: #fff;
+    padding: 14px 44px;
+    background-color: #fd4766;
+    border: 2px solid #fd4766;
+}
+.hire-btn .btn:hover{
+    border: 2px solid #fd4766;
+    color: #fd4766;
+    background-color: transparent;
+}
+.contact-section {
+    margin-right: 20px;
+}
+
+.hire-me-img {
+    margin-left: 20px;
+}
+
+.hire-me-img img {
+    border-radius: 10px;
+}
+/* ========== Hire Me css ============ */
+
+.footer{
+    background: #091020;
+}
+.footer-logo{
+    display: block;
+    padding: 30px 60px;
+    width: 250px;
+}
+.footer .social-button{
+    float: none;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+}
+.footer .social-icon li{
+    height: 50px;
+    width: 50px;
+    border: 2px solid #bfbbbbbd;
+    border-radius: 50%;
+    padding: 12px 0;
+    color: #bfbbbbbd;
+    margin-right: 5px;
+}
+.footer .social-icon li:hover{
+    border: 2px solid #fd4766;
+    background: #fd4766;
+    color: #fff;
+}
+.footer-right {
+    text-align: center;
+    margin-top: 46px;
+}
+
+.footer-right p {
+    font-size: 14px;
+    color: #757575;
+    font-weight: 400;
+}
+/* ========== Footer End ============== */
